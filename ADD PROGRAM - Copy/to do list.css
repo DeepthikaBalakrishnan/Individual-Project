@@ -1,0 +1,111 @@
+/* General body styles with background image */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/042/820/184/non_2x/flowers-composition-gypsophila-flowers-on-pastel-pink-background-flat-lay-top-view-copy-space-photo.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the to-do list */
+.todo-container {
+    background-color: rgba(215,131,127); 
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+/* List of tasks */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Individual task styling */
+li {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out; /* Added border transition */
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: rgba(255, 141, 161);
+    border: 2px solid pink; /* Add pink border on hover */
+}
+
+/* Task completion styling */
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Input and button container */
+.todo-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.todo-input-container input {
+    padding: 15px;
+    font-size: 18px;
+    width: 70%;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.todo-input-container button {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todo-input-container button:hover {
+    background-color: #45a049;
+}
+
+/* Delete button styling */
+button.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.delete-btn:hover {
+    background-color: #c0392b;
+}
